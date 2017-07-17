@@ -3,7 +3,7 @@ This PoC does three things:
 
 1. Add a new routine (32-bit and 64-bit compatible) to the comm page <b>text section</b>.
 2. Add a new string to the comm page <b>data section</b>.
-3. Call the newly added routine from a user space program.
+3. Call (after mapped into the process's address space) the newly added routine from a user space program.
 
 ### Preparations
 The following files needs to be patched/added in order to work:
