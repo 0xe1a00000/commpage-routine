@@ -1,0 +1,18 @@
+453a454,455
+>     
+>     commpage_stuff(_COMM_PAGE_HELLOSTRING, "Hello, Commpage!", _COMM_PAGE_HELLOSTRINGLEN);
+528a531
+>     i = 0;
+531c534,537
+< 		commpage_stuff_routine(*rd);
+---
+>         kprintf("[mg::commpage.c] Populating 32-bit commpage routine #%d at address 0x%016x (%p)\n",
+>                 i++, (*rd)->commpage_address, (*rd)->code_address);
+>         
+>         commpage_stuff_routine(*rd);
+548a555
+>         i = 0;
+549a557,559
+>             kprintf("[mg::commpage.c] Populating 64-bit commpage routine #%d at address 0x%016x (%p)\n",
+>                     i++, (*rd)->commpage_address, (*rd)->code_address);
+>             
