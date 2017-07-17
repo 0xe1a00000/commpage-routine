@@ -27,7 +27,7 @@ $ vmmap $$ | grep "shared memory.*r-x"
 shared memory          00007fffffe14000-00007fffffe15000 [    4K     4K     4K     0K] r-x/r-x SM=SHM
 ```
 
-Run commpage-routine:
+Run user space program:
 
 ```
 ./commpage-routine 0x7fffffe14000
